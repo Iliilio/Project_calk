@@ -19,8 +19,8 @@ public class Main {
         int op2 = Integer.parseInt(variables[2]);
         String od = variables[1];
 
-        if(op1 > 10 || op2 > 10) {
-            System.out.println("Операнды должны быть меньше или = 10");
+        if(op1 > 10 || op2 > 10 || op1 < 1 || op2 < 1) {
+            System.out.println("Операнды должны быть в диапазоне от 1 до 10");
             throw new Exception();
         } else {
 
